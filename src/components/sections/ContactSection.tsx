@@ -65,7 +65,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Email Us</h4>
-                  <p className="text-muted-foreground">info@netshield-enterprise.com</p>
+                  <p className="text-muted-foreground">netshieldenterprise@gmail.com</p>
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Call Us</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+234 802 760 2441</p>
                 </div>
               </div>
 

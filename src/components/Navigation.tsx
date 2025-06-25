@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -41,7 +40,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/455e0b5a-e65b-4dd4-a4ed-ee544305cb4d.png" 
+              src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
               alt="Netshield Enterprise" 
               className="h-8 w-auto"
             />
