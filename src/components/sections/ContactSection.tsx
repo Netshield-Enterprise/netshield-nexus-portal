@@ -107,7 +107,7 @@ const ContactSection = () => {
             <form 
               action="https://usebasin.com/f/dcdbf93f832e" 
               method="POST" 
-              enctype="multipart/form-data"
+              encType="multipart/form-data"
               onSubmit={handleSubmit}
               className="space-y-6"
             >
