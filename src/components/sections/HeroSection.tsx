@@ -31,7 +31,7 @@ const HeroSection = () => {
           {/* Logo */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
+              src="/netshield-nexus-portal/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
               alt="Netshield Enterprise" 
               className="h-24 w-auto animate-pulse-glow"
             />

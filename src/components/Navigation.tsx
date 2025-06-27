@@ -40,7 +40,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
+              src="/netshield-nexus-portal/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
               alt="Netshield Enterprise" 
               className="h-8 w-auto"
             />

@@ -23,7 +23,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img 
-              src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
+              src="/netshield-nexus-portal/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
               alt="Netshield Enterprise" 
               className="h-6 w-auto"
             />
@@ -32,7 +32,7 @@ const Index = () => {
             </span>
           </div>
           <p className="text-muted-foreground text-sm">
-            © 2024 Netshield Enterprise. All rights reserved. Securing the digital frontier.
+            © 2025 Netshield Enterprise. All rights reserved. Securing the digital frontier.
           </p>
         </div>
       </footer>
