@@ -24,7 +24,7 @@ const Index = () => {
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <img 
-                src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
+                src="/public/lovable-uploads/455e0b5a-e65b-4dd4-a4ed-ee544305cb4d.png" 
                 alt="Netshield Enterprise" 
                 className="h-5 w-auto filter brightness-0 invert"
               />
