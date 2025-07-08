@@ -9,7 +9,7 @@ import ContactSection from '@/components/sections/ContactSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       <HeroSection />
       <MissionVisionSection />
@@ -19,20 +19,22 @@ const Index = () => {
       <ContactSection />
       
       {/* Footer */}
-      <footer className="py-8 border-t border-border/50 bg-card/30 backdrop-blur-sm">
+      <footer className="py-12 bg-gray-50 border-t border-border">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <img 
-              src="/netshield-nexus-portal/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
-              alt="Netshield Enterprise" 
-              className="h-6 w-auto"
-            />
+          <div className="flex items-center justify-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-white rounded-lg shadow-soft flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
+                alt="Netshield Enterprise" 
+                className="h-5 w-auto"
+              />
+            </div>
             <span className="font-orbitron font-bold text-lg text-primary">
               NETSHIELD ENTERPRISE
             </span>
           </div>
           <p className="text-muted-foreground text-sm">
-            © 2025 Netshield Enterprise. All rights reserved. Securing the digital frontier.
+            © 2025 Netshield Enterprise. All rights reserved. Securing the digital future.
           </p>
         </div>
       </footer>
