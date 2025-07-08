@@ -1,68 +1,69 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 215 28% 17%;
-    --foreground: 210 40% 98%;
+    --background: 248 250 252;
+    --foreground: 15 23 42;
 
-    --card: 215 28% 17%;
-    --card-foreground: 210 40% 98%;
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
 
-    --popover: 215 28% 17%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
 
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 59 130 246;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 241 245 249;
+    --secondary-foreground: 51 65 85;
 
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
+    --muted: 248 250 252;
+    --muted-foreground: 100 116 139;
 
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 241 245 249;
+    --accent-foreground: 51 65 85;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
 
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 221.2 83.2% 53.3%;
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 59 130 246;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
   }
 
   .dark {
-    --background: 215 28% 17%;
-    --foreground: 210 40% 98%;
+    --background: 2 6 23;
+    --foreground: 248 250 252;
 
-    --card: 215 28% 17%;
-    --card-foreground: 210 40% 98%;
+    --card: 15 23 42;
+    --card-foreground: 248 250 252;
 
-    --popover: 215 28% 17%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 15 23 42;
+    --popover-foreground: 248 250 252;
 
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 84% 4.9%;
+    --primary: 99 102 241;
+    --primary-foreground: 248 250 252;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 30 41 59;
+    --secondary-foreground: 226 232 240;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 30 41 59;
+    --muted-foreground: 148 163 184;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 30 41 59;
+    --accent-foreground: 226 232 240;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 220 38 38;
+    --destructive-foreground: 248 250 252;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 94.1%;
+    --border: 30 41 59;
+    --input: 30 41 59;
+    --ring: 99 102 241;
   }
 }
 
@@ -75,89 +76,32 @@
     @apply bg-background text-foreground font-inter;
   }
 
-  .font-orbitron {
-    font-family: 'Orbitron', monospace;
-  }
-
   .font-inter {
     font-family: 'Inter', sans-serif;
   }
 
-  .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, #60a5fa 50%, #a78bfa 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, #60a5fa 50%, #a78bfa 100%);
-  }
-
-  .gradient-border {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, #60a5fa 50%, #a78bfa 100%);
-    padding: 2px;
-    border-radius: 0.75rem;
-  }
-
-  .glass-effect {
-    backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .shadow-soft {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  }
-
-  .shadow-medium {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-  }
-
-  .shadow-strong {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
-  }
-
-  .bg-grid {
-    background-image: radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.2) 1px, transparent 0);
-    background-size: 20px 20px;
-  }
-
-  .bg-dots {
-    background-image: radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.25) 1px, transparent 0);
-    background-size: 40px 40px;
+  .font-display {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
   }
 }
 
 @layer utilities {
   .animate-fade-in {
-    animation: fadeIn 0.8s ease-out;
+    animation: fadeIn 0.6s ease-out;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.8s ease-out;
-  }
-
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
-
-  .animate-pulse-slow {
-    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: slideUp 0.6s ease-out;
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
+    from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes slideUp {
-    from { opacity: 0; transform: translateY(40px); }
+    from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
   }
 }
