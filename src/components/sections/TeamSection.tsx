@@ -33,31 +33,31 @@ const TeamSection = () => {
   ];
 
   const certifications = [
-    { name: "OSCP", color: "bg-red-100 text-red-700" },
-    { name: "eCPTX", color: "bg-blue-100 text-blue-700" },
-    { name: "CEH", color: "bg-green-100 text-green-700" },
-    { name: "CISSP", color: "bg-purple-100 text-purple-700" },
-    { name: "CISM", color: "bg-orange-100 text-orange-700" },
-    { name: "GCIH", color: "bg-indigo-100 text-indigo-700" }
+    { name: "OSCP", color: "bg-red-500/20 text-red-400" },
+    { name: "eCPTX", color: "bg-blue-500/20 text-blue-400" },
+    { name: "CEH", color: "bg-green-500/20 text-green-400" },
+    { name: "CISSP", color: "bg-purple-500/20 text-purple-400" },
+    { name: "CISM", color: "bg-orange-500/20 text-orange-400" },
+    { name: "GCIH", color: "bg-indigo-500/20 text-indigo-400" }
   ];
 
   return (
-    <section id="team" className="py-24 relative bg-gradient-to-br from-white to-slate-100">
-      <div className="absolute inset-0 bg-grid opacity-20"></div>
+    <section id="team" className="py-24 relative bg-gradient-to-br from-slate-800 to-slate-900">
+      <div className="absolute inset-0 bg-grid opacity-10"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
           <div className="inline-block mb-6">
             <div className="gradient-border">
-              <div className="bg-white px-6 py-2 rounded-full">
+              <div className="bg-slate-800/80 backdrop-blur-sm px-6 py-2 rounded-full">
                 <span className="gradient-text font-orbitron font-bold text-sm tracking-wide">WHY CHOOSE US</span>
               </div>
             </div>
           </div>
-          <h2 className="font-orbitron font-bold text-4xl md:text-5xl mb-6 text-slate-800">
+          <h2 className="font-orbitron font-bold text-4xl md:text-5xl mb-6 text-slate-200">
             Meet Our Security Experts
           </h2>
-          <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
             Our team combines years of real-world experience with cutting-edge expertise to deliver 
             unparalleled security solutions. We don't just find vulnerabilities – we help you fix them.
           </p>
@@ -65,21 +65,21 @@ const TeamSection = () => {
 
         {/* Team stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-4xl mx-auto">
-          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-200/50 text-center">
+          <div className="bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-700/50 text-center">
             <div className="text-3xl font-bold text-primary mb-2">50+</div>
-            <div className="text-sm text-slate-600">Security Assessments</div>
+            <div className="text-sm text-slate-300">Security Assessments</div>
           </div>
-          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-200/50 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
-            <div className="text-sm text-slate-600">Years Combined Experience</div>
+          <div className="bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-700/50 text-center">
+            <div className="text-3xl font-bold text-blue-400 mb-2">15+</div>
+            <div className="text-sm text-slate-300">Years Combined Experience</div>
           </div>
-          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-200/50 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">1000+</div>
-            <div className="text-sm text-slate-600">Vulnerabilities Found</div>
+          <div className="bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-700/50 text-center">
+            <div className="text-3xl font-bold text-green-400 mb-2">1000+</div>
+            <div className="text-sm text-slate-300">Vulnerabilities Found</div>
           </div>
-          <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-200/50 text-center">
-            <div className="text-3xl font-bold text-purple-600 mb-2">24/7</div>
-            <div className="text-sm text-slate-600">Response Time</div>
+          <div className="bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl shadow-medium border border-slate-700/50 text-center">
+            <div className="text-3xl font-bold text-purple-400 mb-2">24/7</div>
+            <div className="text-sm text-slate-300">Response Time</div>
           </div>
         </div>
 
@@ -88,13 +88,13 @@ const TeamSection = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-medium hover:shadow-strong border border-slate-200/50 transition-all duration-500 hover:scale-105 animate-slide-up"
+              className="group bg-slate-800/60 backdrop-blur-sm p-8 rounded-3xl shadow-medium hover:shadow-strong border border-slate-700/50 hover:border-slate-600/50 transition-all duration-500 hover:scale-105 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="text-center mb-6">
                 <div className="relative mb-4">
-                  <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-slate-100 to-slate-200 p-1">
-                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-slate-700 to-slate-800 p-1">
+                    <div className="w-full h-full rounded-full bg-slate-800/80 backdrop-blur-sm flex items-center justify-center overflow-hidden">
                       {member.placeholder ? (
                         <div className="text-primary">
                           {member.icon}
@@ -110,11 +110,11 @@ const TeamSection = () => {
                   </div>
                 </div>
                 
-                <h3 className="font-orbitron font-bold text-xl mb-2 text-slate-800">
+                <h3 className="font-orbitron font-bold text-xl mb-2 text-slate-200">
                   {member.name}
                 </h3>
                 <p className="text-primary font-semibold mb-4">{member.role}</p>
-                <p className="text-slate-600 leading-relaxed mb-6 text-sm">
+                <p className="text-slate-300 leading-relaxed mb-6 text-sm">
                   {member.description}
                 </p>
                 
@@ -123,7 +123,7 @@ const TeamSection = () => {
                   {member.skills.map((skill, skillIndex) => (
                     <span 
                       key={skillIndex}
-                      className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-medium"
+                      className="bg-slate-700/50 text-slate-300 px-3 py-1 rounded-full text-xs font-medium"
                     >
                       {skill}
                     </span>
@@ -134,8 +134,8 @@ const TeamSection = () => {
                   <button className="bg-primary/20 hover:bg-primary/30 p-3 rounded-xl transition-colors duration-200">
                     <Linkedin className="w-5 h-5 text-primary" />
                   </button>
-                  <button className="bg-slate-200 hover:bg-slate-300 p-3 rounded-xl transition-colors duration-200">
-                    <Mail className="w-5 h-5 text-slate-600" />
+                  <button className="bg-slate-700/50 hover:bg-slate-600/50 p-3 rounded-xl transition-colors duration-200">
+                    <Mail className="w-5 h-5 text-slate-300" />
                   </button>
                 </div>
               </div>
@@ -144,20 +144,20 @@ const TeamSection = () => {
         </div>
 
         {/* Certifications */}
-        <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-medium border border-slate-200/50 max-w-4xl mx-auto mb-16">
+        <div className="bg-slate-800/60 backdrop-blur-sm p-8 rounded-3xl shadow-medium border border-slate-700/50 max-w-4xl mx-auto mb-16">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
               <Award className="w-8 h-8 text-primary mr-3" />
-              <h3 className="font-orbitron font-bold text-2xl text-slate-800">Our Certifications</h3>
+              <h3 className="font-orbitron font-bold text-2xl text-slate-200">Our Certifications</h3>
             </div>
-            <p className="text-slate-600">Industry-recognized certifications that validate our expertise</p>
+            <p className="text-slate-300">Industry-recognized certifications that validate our expertise</p>
           </div>
           
           <div className="flex flex-wrap gap-4 justify-center">
             {certifications.map((cert, index) => (
               <div 
                 key={index}
-                className={`${cert.color} px-4 py-2 rounded-xl font-semibold text-sm`}
+                className={`${cert.color} px-4 py-2 rounded-xl font-semibold text-sm border border-slate-700/50`}
               >
                 {cert.name}
               </div>
@@ -167,11 +167,11 @@ const TeamSection = () => {
 
         {/* Join team CTA */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 p-8 rounded-3xl shadow-medium border border-primary/20 max-w-3xl mx-auto">
-            <h3 className="font-orbitron font-bold text-2xl mb-4 text-slate-800">
+          <div className="bg-gradient-to-r from-primary/20 to-blue-500/20 backdrop-blur-sm p-8 rounded-3xl shadow-medium border border-primary/30 max-w-3xl mx-auto">
+            <h3 className="font-orbitron font-bold text-2xl mb-4 text-slate-200">
               Join Our Security Team
             </h3>
-            <p className="text-slate-600 mb-6">
+            <p className="text-slate-300 mb-6">
               We're always looking for talented cybersecurity professionals who are passionate about 
               protecting digital infrastructure and working with cutting-edge security technology.
             </p>

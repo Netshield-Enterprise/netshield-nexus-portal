@@ -34,14 +34,14 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-strong' : 'bg-transparent'
+      isScrolled ? 'bg-slate-900/95 backdrop-blur-md shadow-strong' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <div className={`w-12 h-12 bg-white rounded-2xl shadow-medium flex items-center justify-center transition-all duration-300 ${
-              isScrolled ? 'border-2 border-slate-200' : 'border-2 border-white/20'
+            <div className={`w-12 h-12 bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-medium flex items-center justify-center transition-all duration-300 border ${
+              isScrolled ? 'border-slate-700' : 'border-slate-700/50'
             }`}>
               <img 
                 src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
@@ -50,10 +50,10 @@ const Navigation = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-orbitron font-bold text-xl text-slate-800">
+              <span className="font-orbitron font-bold text-xl text-slate-200">
                 NETSHIELD
               </span>
-              <span className="text-xs text-slate-600 font-medium -mt-1">
+              <span className="text-xs text-slate-300 font-medium -mt-1">
                 ENTERPRISE
               </span>
             </div>
@@ -65,7 +65,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-slate-700 hover:text-primary transition-colors duration-200 font-medium relative group py-2"
+                className="text-slate-300 hover:text-primary transition-colors duration-200 font-medium relative group py-2"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-bg transition-all duration-300 group-hover:w-full rounded-full"></span>
@@ -83,7 +83,7 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden bg-white/80 backdrop-blur-sm rounded-2xl shadow-medium"
+            className="md:hidden bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-medium"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -92,12 +92,12 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-md shadow-strong border border-slate-200/50 rounded-3xl mt-4 p-6">
+          <div className="md:hidden bg-slate-900/95 backdrop-blur-md shadow-strong border border-slate-700/50 rounded-3xl mt-4 p-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left py-4 px-4 text-slate-700 hover:text-primary hover:bg-slate-50 rounded-2xl transition-all duration-200 font-medium"
+                className="block w-full text-left py-4 px-4 text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-2xl transition-all duration-200 font-medium"
               >
                 {item.label}
               </button>

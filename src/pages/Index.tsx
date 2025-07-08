@@ -19,10 +19,10 @@ const Index = () => {
       <ContactSection />
       
       {/* Footer */}
-      <footer className="py-12 bg-gray-50 border-t border-border">
+      <footer className="py-12 bg-slate-900/90 backdrop-blur-sm border-t border-slate-800">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-white rounded-lg shadow-soft flex items-center justify-center">
+            <div className="w-8 h-8 bg-slate-800/80 backdrop-blur-sm rounded-lg shadow-soft flex items-center justify-center">
               <img 
                 src="/lovable-uploads/b538bdaa-5af0-4f24-a3a5-607841f9bc32.png" 
                 alt="Netshield Enterprise" 
@@ -33,7 +33,7 @@ const Index = () => {
               NETSHIELD ENTERPRISE
             </span>
           </div>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-slate-400 text-sm">
             © 2025 Netshield Enterprise. All rights reserved. Securing the digital future.
           </p>
         </div>
