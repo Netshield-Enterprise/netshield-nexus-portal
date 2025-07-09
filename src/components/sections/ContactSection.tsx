@@ -35,10 +35,10 @@ const ContactSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-orbitron font-bold text-3xl md:text-4xl mb-4 text-gradient-cyber">
+          <h2 className="font-inter font-bold text-3xl md:text-4xl mb-4 text-primary">
             Get In Touch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to strengthen your cybersecurity posture? Contact our experts to discuss your security needs 
             and get a customized protection strategy for your organization.
           </p>
@@ -48,10 +48,10 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="font-orbitron font-bold text-2xl mb-6 text-foreground">
+              <h3 className="font-inter font-bold text-2xl mb-6 text-foreground">
                 Let's Secure Your Future
               </h3>
-              <p className="text-muted-foreground leading-relaxed mb-8">
+              <p className="font-inter text-muted-foreground leading-relaxed mb-8">
                 Whether you need a comprehensive vulnerability assessment, penetration testing, 
                 or want to integrate security into your development process, our team is here to help. 
                 We provide tailored cybersecurity solutions that fit your organization's unique needs.
@@ -64,8 +64,8 @@ const ContactSection = () => {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Email Us</h4>
-                  <p className="text-muted-foreground">netshieldenterprise@gmail.com</p>
+                  <h4 className="font-inter font-semibold text-foreground">Email Us</h4>
+                  <p className="font-inter text-muted-foreground">netshieldenterprise@gmail.com</p>
                 </div>
               </div>
 
@@ -74,8 +74,8 @@ const ContactSection = () => {
                   <Phone className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Call Us</h4>
-                  <p className="text-muted-foreground">+234 802 760 2441</p>
+                  <h4 className="font-inter font-semibold text-foreground">Call Us</h4>
+                  <p className="font-inter text-muted-foreground">+234 802 760 2441</p>
                 </div>
               </div>
 
@@ -84,17 +84,17 @@ const ContactSection = () => {
                   <MapPin className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Location</h4>
-                  <p className="text-muted-foreground">Global Remote Operations</p>
+                  <h4 className="font-inter font-semibold text-foreground">Location</h4>
+                  <p className="font-inter text-muted-foreground">Global Remote Operations</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-cyber p-6 rounded-xl border border-border/50">
-              <h4 className="font-semibold text-lg mb-4 text-foreground">
+            <div className="bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border/50">
+              <h4 className="font-inter font-semibold text-lg mb-4 text-foreground">
                 Quick Response Guarantee
               </h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="font-inter text-muted-foreground text-sm leading-relaxed">
                 We understand that cybersecurity is critical. That's why we guarantee a response 
                 to all inquiries within 24 hours. For urgent security incidents, please call our 
                 emergency response line.
@@ -113,7 +113,7 @@ const ContactSection = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
+                  <label htmlFor="name" className="block text-sm font-inter font-semibold text-foreground mb-2">
                     Full Name *
                   </label>
                   <input
@@ -121,12 +121,12 @@ const ContactSection = () => {
                     name="name"
                     id="name"
                     required
-                    className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground"
+                    className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground font-inter"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
+                  <label htmlFor="email" className="block text-sm font-inter font-semibold text-foreground mb-2">
                     Email Address *
                   </label>
                   <input
@@ -134,71 +134,71 @@ const ContactSection = () => {
                     name="email"
                     id="email"
                     required
-                    className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground"
+                    className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground font-inter"
                     placeholder="john@company.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-semibold text-foreground mb-2">
+                <label htmlFor="company" className="block text-sm font-inter font-semibold text-foreground mb-2">
                   Company/Organization
                 </label>
                 <input
                   type="text"
                   name="company"
                   id="company"
-                  className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground"
+                  className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground font-inter"
                   placeholder="Your Company Name"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
+                <label className="block text-sm font-inter font-semibold text-foreground mb-2">
                   Services Interested In
                 </label>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <label className="flex items-center">
                     <input type="checkbox" name="services" value="VAPT" className="mr-2 text-primary" />
-                    <span className="text-sm text-muted-foreground">VAPT</span>
+                    <span className="text-sm font-inter text-muted-foreground">VAPT</span>
                   </label>
                   <label className="flex items-center">
                     <input type="checkbox" name="services" value="DevSecOps" className="mr-2 text-primary" />
-                    <span className="text-sm text-muted-foreground">DevSecOps</span>
+                    <span className="text-sm font-inter text-muted-foreground">DevSecOps</span>
                   </label>
                   <label className="flex items-center">
                     <input type="checkbox" name="services" value="Security Automation" className="mr-2 text-primary" />
-                    <span className="text-sm text-muted-foreground">Security Automation</span>
+                    <span className="text-sm font-inter text-muted-foreground">Security Automation</span>
                   </label>
                   <label className="flex items-center">
                     <input type="checkbox" name="services" value="GRC" className="mr-2 text-primary" />
-                    <span className="text-sm text-muted-foreground">GRC & Compliance</span>
+                    <span className="text-sm font-inter text-muted-foreground">GRC & Compliance</span>
                   </label>
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
+                <label className="block text-sm font-inter font-semibold text-foreground mb-2">
                   Project Timeline
                 </label>
                 <div className="flex gap-4">
                   <label className="flex items-center">
                     <input type="radio" name="timeline" value="immediate" className="mr-2 text-primary" />
-                    <span className="text-sm text-muted-foreground">Immediate</span>
+                    <span className="text-sm font-inter text-muted-foreground">Immediate</span>
                   </label>
                   <label className="flex items-center">
                     <input type="radio" name="timeline" value="1-3 months" className="mr-2 text-primary" defaultChecked />
-                    <span className="text-sm text-muted-foreground">1-3 months</span>
+                    <span className="text-sm font-inter text-muted-foreground">1-3 months</span>
                   </label>
                   <label className="flex items-center">
                     <input type="radio" name="timeline" value="planning" className="mr-2 text-primary" />
-                    <span className="text-sm text-muted-foreground">Planning phase</span>
+                    <span className="text-sm font-inter text-muted-foreground">Planning phase</span>
                   </label>
                 </div>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
+                <label htmlFor="message" className="block text-sm font-inter font-semibold text-foreground mb-2">
                   Message *
                 </label>
                 <textarea
@@ -206,13 +206,13 @@ const ContactSection = () => {
                   id="message"
                   rows={5}
                   required
-                  className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground resize-none"
+                  className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground font-inter resize-none"
                   placeholder="Tell us about your cybersecurity needs, current challenges, or specific requirements..."
                 ></textarea>
               </div>
 
               <div>
-                <label htmlFor="file-upload" className="block text-sm font-semibold text-foreground mb-2">
+                <label htmlFor="file-upload" className="block text-sm font-inter font-semibold text-foreground mb-2">
                   Attach Files (Optional)
                 </label>
                 <div className="relative">
@@ -228,7 +228,7 @@ const ContactSection = () => {
                     className="flex items-center justify-center w-full px-4 py-3 bg-input border border-border border-dashed rounded-lg cursor-pointer hover:bg-muted/50 transition-colors duration-200"
                   >
                     <Upload className="w-5 h-5 text-muted-foreground mr-2" />
-                    <span className="text-sm text-muted-foreground">
+                    <span className="text-sm font-inter text-muted-foreground">
                       Click to upload documents, network diagrams, or requirements
                     </span>
                   </label>
@@ -238,7 +238,7 @@ const ContactSection = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-6 rounded-lg transition-all duration-200 glow-cyan"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-inter font-semibold py-3 px-6 rounded-lg transition-all duration-200"
               >
                 {isSubmitting ? (
                   "Sending..."
