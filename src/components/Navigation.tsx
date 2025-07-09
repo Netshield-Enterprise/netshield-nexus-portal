@@ -40,11 +40,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 flex items-center justify-center">
               <img 
-                src="/public/lovable-uploads/455e0b5a-e65b-4dd4-a4ed-ee544305cb4d.png" 
+                src="/lovable-uploads/eb4e86af-0c78-4253-8638-cf7e2fdcddb7.png" 
                 alt="Netshield Enterprise" 
-                className="h-6 w-auto filter brightness-0 invert"
+                className="h-8 w-auto"
               />
             </div>
             <div className="flex flex-col">
