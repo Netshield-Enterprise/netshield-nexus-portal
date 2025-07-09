@@ -1,5 +1,5 @@
 
-import { Shield, Search, Cog, Target, Code, Zap } from 'lucide-react';
+import { Shield, Search, Cog, Target, Code } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
@@ -37,13 +37,6 @@ const ServicesSection = () => {
       subtitle: "Security in CI/CD Pipeline",
       description: "Integrate security into your development lifecycle with automated testing.",
       features: ["CI/CD Security Integration", "Automated Security Testing", "Container Security", "Infrastructure as Code Security"]
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Incident Response",
-      subtitle: "Rapid Threat Response",
-      description: "Fast, effective response to security incidents with forensic analysis and recovery guidance.",
-      features: ["24/7 Incident Response", "Forensic Analysis", "Malware Analysis", "Recovery Planning"]
     }
   ];
 
@@ -54,10 +47,10 @@ const ServicesSection = () => {
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
             WHAT WE DO
           </div>
-          <h2 className="font-display text-4xl md:text-5xl mb-6 text-foreground">
+          <h2 className="font-inter font-bold text-4xl md:text-5xl mb-6 text-foreground">
             Our Security Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-inter">
             Comprehensive cybersecurity solutions designed to protect your digital assets and business operations.
           </p>
         </div>
@@ -74,21 +67,21 @@ const ServicesSection = () => {
                 </div>
               </div>
               
-              <h3 className="font-semibold text-xl mb-2 text-foreground">
+              <h3 className="font-inter font-semibold text-xl mb-2 text-foreground">
                 {service.title}
               </h3>
               
-              <p className="text-sm font-medium text-primary mb-4">
+              <p className="text-sm font-medium text-primary mb-4 font-inter">
                 {service.subtitle}
               </p>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed font-inter">
                 {service.description}
               </p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start text-sm text-muted-foreground">
+                  <li key={featureIndex} className="flex items-start text-sm text-muted-foreground font-inter">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
                     <span>{feature}</span>
                   </li>
@@ -101,15 +94,15 @@ const ServicesSection = () => {
         {/* Call to action */}
         <div className="mt-16 text-center">
           <div className="bg-card p-8 rounded-lg border shadow-sm max-w-2xl mx-auto">
-            <h3 className="font-semibold text-2xl mb-4 text-foreground">
+            <h3 className="font-inter font-semibold text-2xl mb-4 text-foreground">
               Need a Custom Security Solution?
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-6 font-inter">
               Every organization has unique security challenges. Let's discuss how we can tailor our services to your specific needs.
             </p>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-md font-medium transition-colors duration-200"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-md font-medium transition-colors duration-200 font-inter"
             >
               Schedule a Consultation
             </button>

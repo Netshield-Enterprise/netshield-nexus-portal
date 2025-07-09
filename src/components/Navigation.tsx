@@ -48,10 +48,10 @@ const Navigation = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-lg text-foreground">
+              <span className="font-inter font-bold text-lg text-foreground">
                 NETSHIELD
               </span>
-              <span className="text-xs text-muted-foreground -mt-1">
+              <span className="text-xs text-muted-foreground -mt-1 font-inter">
                 ENTERPRISE
               </span>
             </div>
@@ -63,7 +63,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium font-inter"
               >
                 {item.label}
               </button>
@@ -91,7 +91,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left py-3 px-4 text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors duration-200"
+                className="block w-full text-left py-3 px-4 text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors duration-200 font-inter"
               >
                 {item.label}
               </button>

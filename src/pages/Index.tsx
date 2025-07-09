@@ -29,11 +29,11 @@ const Index = () => {
                 className="h-6 w-auto"
               />
             </div>
-            <span className="font-display text-lg text-foreground">
+            <span className="font-inter font-bold text-lg text-foreground">
               NETSHIELD ENTERPRISE
             </span>
           </div>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-sm font-inter">
             © 2025 Netshield Enterprise. All rights reserved. Securing the digital future.
           </p>
         </div>
