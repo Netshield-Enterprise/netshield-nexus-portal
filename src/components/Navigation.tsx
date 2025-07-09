@@ -42,7 +42,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/eb4e86af-0c78-4253-8638-cf7e2fdcddb7.png" 
+                src="/public/lovable-uploads/eb4e86af-0c78-4253-8638-cf7e2fdcddb7.png" 
                 alt="Netshield Enterprise" 
                 className="h-8 w-auto"
               />

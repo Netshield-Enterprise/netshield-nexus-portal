@@ -24,7 +24,7 @@ const Index = () => {
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="w-8 h-8 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/eb4e86af-0c78-4253-8638-cf7e2fdcddb7.png" 
+                src="/public/lovable-uploads/eb4e86af-0c78-4253-8638-cf7e2fdcddb7.png" 
                 alt="Netshield Enterprise" 
                 className="h-6 w-auto"
               />
