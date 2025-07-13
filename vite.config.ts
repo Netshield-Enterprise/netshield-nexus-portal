@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/netshield-nexus-portal/', // Replace with your actual GitHub repo name
+  base: '/', // Replace with your actual GitHub repo name
   server: {
     host: "::",
     port: 8080,
