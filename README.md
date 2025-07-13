@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# Net-Shield Website
 
-## Project info
+Welcome to the **Net-Shield** website repository! This guide will walk you through the steps of deploying the website using **GitHub Pages** and a custom domain (`www.net-shield.net`), while ensuring the site is secured via **SSL**.
 
-**URL**: https://lovable.dev/projects/05acd7a3-a918-4c0e-979c-a4c854b953ab
+## Prerequisites
 
-## How can I edit this code?
+Before deploying, ensure the following:
 
-There are several ways of editing your application.
+* A **GitHub repository** for the project.
+* A **Cloudflare** account for DNS management.
+* **Vite** is configured for the build.
+* A registered custom domain (e.g., `www.net-shield.net`) pointed to **Cloudflare**.
 
-**Use Lovable**
+## 1. **Setting Up the Website**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/05acd7a3-a918-4c0e-979c-a4c854b953ab) and start prompting.
+### 1.1 Clone the Repository
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/your-org/net-shield-website.git
+cd net-shield-website
 ```
 
-**Edit a file directly in GitHub**
+### 1.2 Install Dependencies
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+```
 
-**Use GitHub Codespaces**
+### 1.3 Build the Site
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 2. **Setting Up GitHub Pages**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Go to your **GitHub repository** → **Settings** → **Pages**.
+2. Set **Source** to `main` (or your preferred branch).
+3. Ensure the root directory is set for deployment (where `index.html` is located).
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/05acd7a3-a918-4c0e-979c-a4c854b953ab) and click on Share -> Publish.
+## 3. **Custom Domain Setup**
 
-## Can I connect a custom domain to my Lovable project?
+### 3.1 Cloudflare DNS Configuration
 
-Yes, you can!
+Ensure you have the following DNS records set up in **Cloudflare** (or your DNS provider):
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+* **A Record for Apex domain (`@`)**: Points to GitHub Pages’ IPs.
+* **CNAME Record for `www`**: Points to `yourusername.github.io`.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Verify DNS Propagation** using a tool like [DNSChecker](https://dnschecker.org).
+
+### 3.2 GitHub Pages Custom Domain
+
+1. Go to **GitHub Settings** → **Pages**.
+2. Enter `www.net-shield.net` under **Custom Domain** and save.
+
+---
+
+## 4. **Setting Up SSL (HTTPS)**
+
+### 4.1 Enable HTTPS on GitHub Pages
+
+Once the DNS is correctly configured, GitHub Pages will automatically issue an SSL certificate.
+
+1. Go to **Settings** → **Pages**.
+2. Enable **Enforce HTTPS**.
+
+### 4.2 Cloudflare SSL Configuration
+
+1. Log into **Cloudflare** and navigate to **SSL/TLS**.
+2. Set SSL mode to **Full (strict)**.
+
+---
+
+## 5. **Redirect Root Domain to `www`**
+
+To redirect `https://net-shield.net` to `https://www.net-shield.net`, use a **Page Rule** in Cloudflare:
+
+1. Go to **Cloudflare** → **Page Rules**.
+2. Create a new rule with the following settings:
+
+   * **URL Pattern**: `https://net-shield.net/*`
+   * **Setting**: **Forwarding URL (301)** to `https://www.net-shield.net/$1`.
+
+---
+
+## 6. **Final Testing**
+
+* **Test the Website** at `https://www.net-shield.net` to ensure everything works.
+* **Check SSL** by looking for the padlock in the browser.
+* **Test Redirect** by visiting `https://net-shield.net`.
+
+---
+
+## 7. **Troubleshooting**
+
+* **SSL not working?** Double-check DNS settings, and ensure Cloudflare SSL is set to **Full (strict)**.
+* **Custom domain not working?** Wait for DNS propagation or check Cloudflare settings.
+
+---
+
+## 8. **Additional Resources**
+
+* [GitHub Pages Documentation](https://docs.github.com/en/pages)
+* [Cloudflare DNS Setup Guide](https://developers.cloudflare.com/fundamentals/dns/)
+* [Vite Documentation](https://vitejs.dev/)
