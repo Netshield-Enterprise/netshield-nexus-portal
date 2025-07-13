@@ -17,7 +17,7 @@ const TeamSection = () => {
     },
     {
       icon: <Clock className="w-8 h-8" />,
-      number: "48hr",
+      number: "24hr",
       label: "Average Response Time",
       description: "Quick turnaround on critical security incidents and assessments"
     },
