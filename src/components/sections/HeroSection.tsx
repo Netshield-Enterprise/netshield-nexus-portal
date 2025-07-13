@@ -24,9 +24,9 @@ const HeroSection = () => {
               </div>
               
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl mb-6 text-foreground">
-                We Break It,
+                We break it,
                 <br />
-                <span className="text-primary">So Others Can't</span>
+                <span className="text-primary">So others can't</span>
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-3xl mx-auto">

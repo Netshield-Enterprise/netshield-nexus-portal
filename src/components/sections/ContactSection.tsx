@@ -96,8 +96,7 @@ const ContactSection = () => {
               </h4>
               <p className="font-inter text-muted-foreground text-sm leading-relaxed">
                 We understand that cybersecurity is critical. That's why we guarantee a response 
-                to all inquiries within 24 hours. For urgent security incidents, please call our 
-                emergency response line.
+                to all inquiries within 24 hours.  
               </p>
             </div>
           </div>
